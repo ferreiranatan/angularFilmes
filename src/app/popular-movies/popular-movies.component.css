@@ -1,0 +1,15 @@
+.containermovie{
+    display: flex;
+    
+    gap: 15px;
+}
+
+.movie{
+    max-width: 150px;
+    max-height: 220px;
+}
+
+.movietitle{
+    max-width: 227px;
+    max-height: 170px;
+}

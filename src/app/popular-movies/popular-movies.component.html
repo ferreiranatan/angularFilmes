@@ -1,0 +1,8 @@
+<h2>Filmes Populares</h2>
+<div  class="containermovie" *ngIf="popularMovies">
+  <div *ngFor="let movie of popularMovies">
+    <img  class="movie" [src]="'https://image.tmdb.org/t/p/w500' + movie.poster_path" alt="{{ movie.title }}">
+    <h3>{{ movie.title }}</h3>
+    <p class="movietitle">{{ movie.overview }}</p>
+  </div>
+</div>
