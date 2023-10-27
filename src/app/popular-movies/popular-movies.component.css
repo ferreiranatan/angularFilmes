@@ -1,15 +1,33 @@
-.containermovie{
-    display: flex;
-    
-    gap: 15px;
+
+
+
+.rowposter{
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
 }
 
-.movie{
-    max-width: 150px;
-    max-height: 220px;
+.rowimg
+{
+    max-height: 100px;
+    object-fit: contain;
+    width: 100%;
+    box-sizing: content-box;
+    transition: transform 450ms;
+    margin-right: 7px;
 }
 
-.movietitle{
-    max-width: 227px;
-    max-height: 170px;
+.rowimg:hover
+{
+    transform: scale(1.09);
+    cursor: pointer;
+}
+
+.largeposter{
+  max-height: 300px;
+}
+
+.rowposter::-webkit-scrollbar
+{
+    display: none;
 }

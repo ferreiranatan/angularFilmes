@@ -1,8 +1,10 @@
-<nav class="navbar">
-    <div class="image">
-        <img src="img/dataset-cover.png" alt="logoTmdb">
+<mat-toolbar class="header mat-elevation-z4">
+    <div class="icons-container">
+      <a href="" class="icon filmes-icon">DIAMONDFLIX</a>
     </div>
-    <a href="">Filmes</a>
-    <a href="">Series</a>
-
-</nav>
+    <a class="account">
+       
+        <a class="nav-link icon" routerLink="search" href="">SEARCH</a>
+    </a>
+  </mat-toolbar>
+  <router-outlet></router-outlet>
