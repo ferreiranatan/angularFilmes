@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { PopularMoviesComponent } from './popular-movies/popular-movies.component';
 import { SearchComponent } from './search/search.component';
 const routes: Routes = [
-  { path: 'popular-movies', component: PopularMoviesComponent },
+  { path: '', component: PopularMoviesComponent },
   {path:'search',component:SearchComponent}
 ];
 

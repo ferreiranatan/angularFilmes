@@ -9,16 +9,13 @@
    margin-bottom: 6px;
   }
   
-  .logo-container {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo {
-    margin-right: 10px;
+  .dflix{
+    font-weight: bold;
+    font-size: larger;
   }
 
-  .account{
+
+  .div_search{
     text-decoration: none;
     align-items: center;
     margin-right: end;
