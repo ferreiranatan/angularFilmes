@@ -39,6 +39,13 @@ export class TmdbService {
   }
 
 
-  
+  getMovieDetails(data: any): Observable<any> {
+    return this.http.get(`${this.apiUrl}/movie/${data}?api_key=${environment.apiKey}`)
+  }
+
+
+  getMovieElenco(data: any): Observable<any> {
+    return this.http.get(`${this.apiUrl}/movie/${data}/credits?api_key=${environment.apiKey}`)
+  }
 }
 

@@ -12,16 +12,19 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { SearchComponent } from './search/search.component';
-import { ReactiveFormsModule } from '@angular/forms';
-// import { TrailerPageComponent } from './trailer-page/trailer-page.component'
-
+import { DetailMovieComponent } from './detail-movie/detail-movie.component';
+import {  ReactiveFormsModule } from '@angular/forms';
+import { TmdbService } from './tmdb/tmdb.service';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     PopularMoviesComponent,
-    SearchComponent],
-
+    SearchComponent,
+    DetailMovieComponent
+    
+    
+  ],
   imports: [
     ReactiveFormsModule,
     MatToolbarModule,
@@ -34,7 +37,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     BrowserModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [TmdbService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
