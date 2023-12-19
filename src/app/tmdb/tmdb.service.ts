@@ -35,7 +35,7 @@ export class TmdbService {
   getSearchMovie(data: any): Observable<any> {
     console.log(data, 'movie#');
 
-    return this.http.get(`${this.apiUrl}/search/movie?api_key=${environment.apiKey}&query=${data.movieName}`);
+    return this.http.get(`${this.apiUrl}/search/movie?api_key=${environment.apiKey}&query=${data}`);
   }
 
 
